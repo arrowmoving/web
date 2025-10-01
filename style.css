@@ -466,3 +466,201 @@ footer {
 .mobile-nav a:hover {
     background: var(--gray-light);
 }
+/* New Styles for Video and Image */
+.video-section {
+    padding: 20px 0;
+    text-align: center;
+    background: var(--gray-light);
+}
+
+.full-width-video {
+    width: 100%;
+    max-width: 360px; /* Optimal width for vertical video */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* BBB Seal */
+.bbb-seal {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+}
+.service-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.service-details.open {
+    max-height: 500px; /* A value large enough to accommodate the content */
+}
+
+.details-button {
+    background: none;
+    border: none;
+    color: var(--secondary);
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 0;
+    transition: color 0.3s;
+}
+
+.details-button:hover {
+    color: var(--primary-dark);
+}
+/* --- NEW STYLES --- */
+
+/* Language Switcher */
+.language-switcher {
+    margin-left: 1rem;
+}
+
+.language-switcher select {
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: var(--white);
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+/* Updated Hero Section Layout */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-form-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    color: var(--gray-dark);
+}
+
+.hero-form-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    animation: fadeInUp 0.5s ease;
+}
+
+.modal-close-btn {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Moving Guides Section */
+.guides {
+    padding: 80px 0;
+    background: var(--gray-light);
+}
+
+.guides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.guide-card {
+    background: var(--white);
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.guide-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    color: var(--secondary);
+}
+
+.guide-card h3 {
+    color: var(--primary);
+}
+
+.guide-card:hover h3 {
+    color: var(--secondary);
+}
+
+.guide-modal .modal-content h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.guide-modal .modal-content p {
+    line-height: 1.8;
+}
+
+/* Responsive adjustments */
+@media (min-width: 992px) {
+    .hero-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .hero-content {
+        flex: 1;
+    }
+    .hero-form-container {
+        flex-basis: 450px;
+    }
+}
