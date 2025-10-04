@@ -313,7 +313,6 @@ nav {
 /* FAQ Section */
 .faq {
     padding: 80px 0;
-    background: var(--gray-light);
 }
 
 .faq-item {
@@ -321,6 +320,7 @@ nav {
     margin-bottom: 15px;
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .faq-question {
@@ -340,7 +340,7 @@ nav {
     padding: 0 20px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
 }
 
 .faq-answer.active {
@@ -350,27 +350,46 @@ nav {
 
 /* Footer */
 footer {
-    background: var(--primary);
+    background: var(--primary-dark);
     color: var(--white);
-    padding: 40px 0;
-    text-align: center;
+    padding: 60px 0 20px;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 30px;
-    margin-bottom: 30px;
+    gap: 40px;
+    margin-bottom: 40px;
 }
 
-.footer-content a {
-    color: var(--white);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-content a:hover {
+.footer-section h4 {
+    margin-bottom: 15px;
     color: var(--secondary);
+    font-size: 1.2rem;
+}
+
+.footer-section p, .footer-section a {
+    color: var(--gray-light);
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+.footer-section a:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid var(--primary);
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.bbb-seal {
+    width: 150px;
+    height: auto;
 }
 
 /* WhatsApp Button */
@@ -386,11 +405,15 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
     text-decoration: none;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     transition: transform 0.3s;
     z-index: 999;
+}
+
+.whatsapp-btn img {
+    width: 35px;
+    height: auto;
 }
 
 .whatsapp-btn:hover {
@@ -429,7 +452,6 @@ footer {
     
     .footer-content {
         grid-template-columns: repeat(3, 1fr);
-        text-align: left;
     }
 }
 
@@ -488,20 +510,16 @@ footer {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* BBB Seal */
-.bbb-seal {
-    width: 150px;
-    height: auto;
-    margin-top: 20px;
-}
 .service-details {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.5s ease-out, margin-top 0.5s ease-out;
+    margin-top: 0;
 }
 
 .service-details.open {
-    max-height: 500px; /* A value large enough to accommodate the content */
+    max-height: 500px;
+    margin-top: 15px;
 }
 
 .details-button {
@@ -513,6 +531,8 @@ footer {
     margin-top: 10px;
     padding: 0;
     transition: color 0.3s;
+    font-family: inherit;
+    font-size: 1rem;
 }
 
 .details-button:hover {
@@ -609,7 +629,6 @@ footer {
 /* Moving Guides Section */
 .guides {
     padding: 80px 0;
-    background: var(--gray-light);
 }
 
 .guides-grid {

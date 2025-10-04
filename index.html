@@ -34,7 +34,7 @@
             <div class="nav-links">
                 <a href="#home" data-lang-key="navHome">Home</a>
                 <a href="#services" data-lang-key="navServices">Services</a>
-                <a href="#about" data-lang-key="navAbout">About</a>
+                <a href="#faq" data-lang-key="navFaq">FAQ</a>
                 <a href="#guides" data-lang-key="navGuides">Moving Guides</a>
                 <a href="#contact" data-lang-key="navContact">Contact</a>
                 <a href="tel:+16479236838" class="cta-button" data-lang-key="navCallNow">Call Now</a>
@@ -56,115 +56,204 @@
         <div class="mobile-nav" id="mobileNav">
             <a href="#home" onclick="toggleMobileMenu()" data-lang-key="navHome">Home</a>
             <a href="#services" onclick="toggleMobileMenu()" data-lang-key="navServices">Services</a>
-            <a href="#about" onclick="toggleMobileMenu()" data-lang-key="navAbout">About</a>
+            <a href="#faq" onclick="toggleMobileMenu()" data-lang-key="navFaq">FAQ</a>
             <a href="#guides" onclick="toggleMobileMenu()" data-lang-key="navGuides">Moving Guides</a>
             <a href="#contact" onclick="toggleMobileMenu()" data-lang-key="navContact">Contact</a>
         </div>
     </header>
 
-    <section class="hero" id="home">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1 data-lang-key="heroTitle">Professional Moving Services in Toronto & GTA</h1>
-                <p data-lang-key="heroSubtitle">Reliable, efficient, and affordable moving for your home or business.</p>
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 data-lang-key="heroTitle">Professional Moving Services in Toronto & GTA</h1>
+                    <p data-lang-key="heroSubtitle">Reliable, efficient, and affordable moving for your home or business.</p>
+                </div>
+                <div class="hero-form-container">
+                    <h3 data-lang-key="formTitle">Get a Quick Estimate</h3>
+                    <form id="heroForm">
+                        <div class="form-group">
+                            <label for="date" data-lang-key="formMovingDate">Moving Date *</label>
+                            <input type="date" id="date" name="Moving Date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="origin" data-lang-key="formMovingFrom">Moving From *</label>
+                            <input type="text" id="origin" name="Moving From" placeholder="e.g., North York, ON" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination" data-lang-key="formMovingTo">Moving To *</label>
+                            <input type="text" id="destination" name="Moving To" placeholder="e.g., Markham, ON" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service" data-lang-key="formServiceType">Service Type *</label>
+                            <select id="service" name="Service Type" required>
+                                <option value="" data-lang-key="formServiceSelect">Select a service</option>
+                                <option value="residential" data-lang-key="formServiceResidential">Residential Moving</option>
+                                <option value="long-distance" data-lang-key="formServiceLongDistance">Long-Distance Moving</option>
+                                <option value="packing" data-lang-key="formServicePacking">Packing Services</option>
+                                <option value="commercial" data-lang-key="formServiceCommercial">Commercial/Office Moving</option>
+                                <option value="specialty" data-lang-key="formServiceSpecialty">Specialty Item Moving</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit-btn" data-lang-key="formGetEstimate">Get Estimate</button>
+                    </form>
+                </div>
             </div>
-            <div class="hero-form-container">
-                <h3 data-lang-key="formTitle">Get a Quick Estimate</h3>
-                <form id="heroForm">
-                    <div class="form-group">
-                        <label for="date" data-lang-key="formMovingDate">Moving Date *</label>
-                        <input type="date" id="date" name="Moving Date" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="origin" data-lang-key="formMovingFrom">Moving From *</label>
-                        <input type="text" id="origin" name="Moving From" placeholder="e.g., North York, ON" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="destination" data-lang-key="formMovingTo">Moving To *</label>
-                        <input type="text" id="destination" name="Moving To" placeholder="e.g., Markham, ON" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="service" data-lang-key="formServiceType">Service Type *</label>
-                        <select id="service" name="Service Type" required>
-                            <option value="" data-lang-key="formServiceSelect">Select a service</option>
-                            <option value="residential" data-lang-key="formServiceResidential">Residential Moving</option>
-                            <option value="long-distance" data-lang-key="formServiceLongDistance">Long-Distance Moving</option>
-                            <option value="packing" data-lang-key="formServicePacking">Packing Services</option>
-                            <option value="commercial" data-lang-key="formServiceCommercial">Commercial/Office Moving</option>
-                            <option value="specialty" data-lang-key="formServiceSpecialty">Specialty Item Moving</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="submit-btn" data-lang-key="formGetEstimate">Get Estimate</button>
-                </form>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <div class="video-section">
-        <video controls autoplay muted loop playsinline class="full-width-video">
-            <source src="assets/clip1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+        <div class="video-section">
+            <video controls autoplay muted loop playsinline class="full-width-video">
+                <source src="assets/clip1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
 
-    <section class="services" id="services">
-        <div class="container">
-            <h2 class="section-title" data-lang-key="servicesTitle">Our Moving Services</h2>
-            <div class="services-grid">
-                 <div class="service-card">
-                    <div class="service-icon">🏠</div>
-                    <h3 data-lang-key="service1Title">Residential Moving</h3>
-                    <p data-lang-key="service1Desc">Expert movers for seamless home and apartment relocations across the GTA. We handle everything with care.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🚛</div>
-                    <h3 data-lang-key="service2Title">Long-Distance Moving</h3>
-                    <p data-lang-key="service2Desc">Reliable long-distance services for moves within Ontario and across Canada. We ensure a smooth transition.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📦</div>
-                    <h3 data-lang-key="service3Title">Packing & Unpacking</h3>
-                    <p data-lang-key="service3Desc">Stress-free packing and unpacking services using high-quality materials to secure your belongings.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">💼</div>
-                    <h3 data-lang-key="service4Title">Commercial Logistics</h3>
-                    <p data-lang-key="service4Desc">Efficient and professional office and commercial relocation services with minimal disruption to your business operations.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🎹</div>
-                    <h3 data-lang-key="service5Title">Specialty Item Moving</h3>
-                    <p data-lang-key="service5Desc">Safe and secure transport for your valuable and delicate items, including pianos, art, and antiques.</p>
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="section-title" data-lang-key="servicesTitle">Our Moving Services</h2>
+                <div class="services-grid">
+                     <div class="service-card">
+                        <div class="service-icon">🏠</div>
+                        <h3 data-lang-key="service1Title">Residential Moving</h3>
+                        <div class="service-details">
+                            <p data-lang-key="service1Desc">Expert movers for seamless home and apartment relocations across the GTA. We handle everything with care.</p>
+                        </div>
+                        <button class="details-button" data-lang-key="detailsBtn">View Details</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🚛</div>
+                        <h3 data-lang-key="service2Title">Long-Distance Moving</h3>
+                        <div class="service-details">
+                            <p data-lang-key="service2Desc">Reliable long-distance services for moves within Ontario and across Canada. We ensure a smooth transition.</p>
+                        </div>
+                        <button class="details-button" data-lang-key="detailsBtn">View Details</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📦</div>
+                        <h3 data-lang-key="service3Title">Packing & Unpacking</h3>
+                        <div class="service-details">
+                            <p data-lang-key="service3Desc">Stress-free packing and unpacking services using high-quality materials to secure your belongings.</p>
+                        </div>
+                        <button class="details-button" data-lang-key="detailsBtn">View Details</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💼</div>
+                        <h3 data-lang-key="service4Title">Commercial Logistics</h3>
+                        <div class="service-details">
+                            <p data-lang-key="service4Desc">Efficient and professional office and commercial relocation services with minimal disruption to your business operations.</p>
+                        </div>
+                        <button class="details-button" data-lang-key="detailsBtn">View Details</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎹</div>
+                        <h3 data-lang-key="service5Title">Specialty Item Moving</h3>
+                        <div class="service-details">
+                            <p data-lang-key="service5Desc">Safe and secure transport for your valuable and delicate items, including pianos, art, and antiques.</p>
+                        </div>
+                        <button class="details-button" data-lang-key="detailsBtn">View Details</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="guides" id="guides">
-        <div class="container">
-            <h2 class="section-title" data-lang-key="guidesTitle">Helpful Moving Guides</h2>
-            <div class="guides-grid">
-                <div class="guide-card" data-modal-target="guide1-modal">
-                    <h3 data-lang-key="guide1Title">Ultimate Packing Guide</h3>
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2 class="section-title" data-lang-key="faqTitle">Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span data-lang-key="faq1Q">How far in advance should I book my move?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-lang-key="faq1A">We recommend booking your move at least 4-6 weeks in advance, especially during peak season (May-September) or at the end of the month. This ensures better availability of your preferred date and time.</p>
+                    </div>
                 </div>
-                <div class="guide-card" data-modal-target="guide2-modal">
-                    <h3 data-lang-key="guide2Title">Choosing a Mover</h3>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span data-lang-key="faq2Q">Are you licensed and insured?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-lang-key="faq2A">Yes, Arrow Moving Van Lines is a fully licensed and insured moving company. We carry comprehensive liability and cargo insurance to protect your belongings throughout the moving process.</p>
+                    </div>
                 </div>
-                <div class="guide-card" data-modal-target="guide3-modal">
-                    <h3 data-lang-key="guide3Title">Moving Day Checklist</h3>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span data-lang-key="faq3Q">What is included in the moving quote?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-lang-key="faq3A">Our standard quotes include the moving truck, professional movers, equipment (dollies, blankets, straps), and basic liability insurance. Packing materials, specialty item handling, and additional insurance are available for an extra charge. We provide a detailed breakdown with every quote.</p>
+                    </div>
                 </div>
-                <div class="guide-card" data-modal-target="guide4-modal">
-                    <h3 data-lang-key="guide4Title">Moving with Pets</h3>
-                </div>
-                <div class="guide-card" data-modal-target="guide5-modal">
-                    <h3 data-lang-key="guide5Title">Understanding Quotes</h3>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span data-lang-key="faq4Q">How do you protect furniture and fragile items?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-lang-key="faq4A">Our trained movers use high-quality moving blankets, plastic wrap, and specialized packing techniques to protect all your furniture. Fragile items like glassware and electronics are carefully packed in sturdy boxes with appropriate cushioning materials.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="guides" id="guides">
+            <div class="container">
+                <h2 class="section-title" data-lang-key="guidesTitle">Helpful Moving Guides</h2>
+                <div class="guides-grid">
+                    <div class="guide-card" data-modal-target="guide1-modal">
+                        <h3 data-lang-key="guide1Title">Ultimate Packing Guide</h3>
+                    </div>
+                    <div class="guide-card" data-modal-target="guide2-modal">
+                        <h3 data-lang-key="guide2Title">Choosing a Mover</h3>
+                    </div>
+                    <div class="guide-card" data-modal-target="guide3-modal">
+                        <h3 data-lang-key="guide3Title">Moving Day Checklist</h3>
+                    </div>
+                    <div class="guide-card" data-modal-target="guide4-modal">
+                        <h3 data-lang-key="guide4Title">Moving with Pets</h3>
+                    </div>
+                    <div class="guide-card" data-modal-target="guide5-modal">
+                        <h3 data-lang-key="guide5Title">Understanding Quotes</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer id="contact">
-        </footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Arrow Moving Van Lines</h4>
+                    <img src="assets/bbb_seal.png" alt="Better Business Bureau Seal" class="bbb-seal">
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang-key="footerContactTitle">Contact Us</h4>
+                    <p>
+                        143 Finch Ave W<br>
+                        Toronto ON M2N2J1
+                    </p>
+                    <p>
+                        <a href="tel:+16479236838">Phone: (647) 923-6838</a>
+                    </p>
+                     <p>
+                        <a href="https://maps.google.com/?q=143+Finch+Ave+W+Toronto+ON+M2N2J1" target="_blank">View on Google Maps</a>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <p><a href="#services" data-lang-key="navServices">Services</a></p>
+                    <p><a href="#faq" data-lang-key="navFaq">FAQ</a></p>
+                    <p><a href="#guides" data-lang-key="navGuides">Moving Guides</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-lang-key="footerCopyright">© 2025 Arrow Moving Van Lines. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <div class="modal" id="contact-details-modal">
         <div class="modal-content">
@@ -237,7 +326,7 @@
     </div>
 
     <a href="https://wa.me/16479236838?text=Hi!%20I'd%20like%20to%20request%20a%20free%20moving%20estimate." class="whatsapp-btn" target="_blank" aria-label="Contact us on WhatsApp">
-        💬
+        <img src="https://imgs.search.brave.com/_AceCmszmFla7dW1J9CGkOyw-OsPjsr6V551hWze7CE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi82LzZiL1do/YXRzQXBwLnN2Zy8y/NTBweC1XaGF0c0Fw/cC5zdmcucG5n" alt="WhatsApp Icon">
     </a>
 
     <script src="script.js"></script>
