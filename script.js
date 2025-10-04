@@ -32,6 +32,16 @@ const translations = {
         service4Desc: "Efficient and professional office and commercial relocation services with minimal disruption to your business operations.",
         service5Title: "Specialty Item Moving",
         service5Desc: "Safe and secure transport for your valuable and delicate items, including pianos, art, and antiques.",
+        detailsBtn: "View Details",
+        faqTitle: "Frequently Asked Questions",
+        faq1Q: "How far in advance should I book my move?",
+        faq1A: "We recommend booking your move at least 4-6 weeks in advance, especially during peak season (May-September) or at the end of the month. This ensures better availability of your preferred date and time.",
+        faq2Q: "Are you licensed and insured?",
+        faq2A: "Yes, Arrow Moving Van Lines is a fully licensed and insured moving company. We carry comprehensive liability and cargo insurance to protect your belongings throughout the moving process.",
+        faq3Q: "What is included in the moving quote?",
+        faq3A: "Our standard quotes include the moving truck, professional movers, equipment (dollies, blankets, straps), and basic liability insurance. Packing materials, specialty item handling, and additional insurance are available for an extra charge. We provide a detailed breakdown with every quote.",
+        faq4Q: "How do you protect furniture and fragile items?",
+        faq4A: "Our trained movers use high-quality moving blankets, plastic wrap, and specialized packing techniques to protect all your furniture. Fragile items like glassware and electronics are carefully packed in sturdy boxes with appropriate cushioning materials.",
         guidesTitle: "Helpful Moving Guides",
         guide1Title: "Ultimate Packing Guide",
         guide2Title: "Choosing a Mover",
@@ -49,7 +59,9 @@ const translations = {
         formPhone: "Phone Number *",
         formDetails: "Additional Details",
         formRequestEstimate: "Request Free Estimate",
-        formSuccessMessage: "Thank you! We'll contact you within 24 hours with your free estimate."
+        formSuccessMessage: "Thank you! We'll contact you within 24 hours with your free estimate.",
+        footerContactTitle: "Contact Us",
+        footerCopyright: "© 2025 Arrow Moving Van Lines. All Rights Reserved."
     },
     fr: {
         navHome: "Accueil",
@@ -83,6 +95,16 @@ const translations = {
         service4Desc: "Services de relocalisation de bureaux et commerciaux efficaces et professionnels avec une perturbation minimale.",
         service5Title: "Déménagement d'Articles Spéciaux",
         service5Desc: "Transport sûr et sécurisé pour vos articles de valeur et délicats, y compris les pianos, l'art et les antiquités.",
+        detailsBtn: "Voir les détails",
+        faqTitle: "Foire Aux Questions",
+        faq1Q: "Combien de temps à l'avance dois-je réserver mon déménagement ?",
+        faq1A: "Nous recommandons de réserver votre déménagement au moins 4 à 6 semaines à l'avance, surtout pendant la haute saison (mai-septembre) ou à la fin du mois. Cela garantit une meilleure disponibilité de votre date et heure préférées.",
+        faq2Q: "Êtes-vous licencié et assuré ?",
+        faq2A: "Oui, Arrow Moving Van Lines est une entreprise de déménagement entièrement licenciée et assurée. Nous disposons d'une assurance responsabilité civile et d'une assurance marchandises complètes pour protéger vos biens tout au long du processus de déménagement.",
+        faq3Q: "Qu'est-ce qui est inclus dans le devis de déménagement ?",
+        faq3A: "Nos devis standards incluent le camion de déménagement, les déménageurs professionnels, l'équipement (diables, couvertures, sangles) et l'assurance responsabilité de base. Le matériel d'emballage, la manutention d'articles spéciaux et une assurance supplémentaire sont disponibles moyennant des frais supplémentaires.",
+        faq4Q: "Comment protégez-vous les meubles et les objets fragiles ?",
+        faq4A: "Nos déménageurs formés utilisent des couvertures de déménagement de haute qualité, du film plastique et des techniques d'emballage spécialisées pour protéger tous vos meubles. Les objets fragiles comme la verrerie et l'électronique sont soigneusement emballés dans des boîtes solides.",
         guidesTitle: "Guides de Déménagement Utiles",
         guide1Title: "Guide d'Emballage Ultime",
         guide2Title: "Choisir un Déménageur",
@@ -100,7 +122,9 @@ const translations = {
         formPhone: "Numéro de téléphone *",
         formDetails: "Détails supplémentaires",
         formRequestEstimate: "Demander une estimation gratuite",
-        formSuccessMessage: "Merci ! Nous vous contacterons dans les 24 heures avec votre estimation gratuite."
+        formSuccessMessage: "Merci ! Nous vous contacterons dans les 24 heures avec votre estimation gratuite.",
+        footerContactTitle: "Contactez-nous",
+        footerCopyright: "© 2025 Arrow Moving Van Lines. Tous droits réservés."
     },
     es: {
         navHome: "Inicio",
@@ -134,6 +158,16 @@ const translations = {
         service4Desc: "Servicios de reubicación de oficinas y comerciales eficientes y profesionales con una interrupción mínima.",
         service5Title: "Mudanza de Artículos Especiales",
         service5Desc: "Transporte seguro para sus artículos valiosos y delicados, incluyendo pianos, arte y antigüedades.",
+        detailsBtn: "Ver detalles",
+        faqTitle: "Preguntas Frecuentes",
+        faq1Q: "¿Con cuánta antelación debo reservar mi mudanza?",
+        faq1A: "Recomendamos reservar su mudanza con al menos 4-6 semanas de antelación, especialmente durante la temporada alta (mayo-septiembre) o a fin de mes. Esto asegura una mejor disponibilidad de su fecha y hora preferidas.",
+        faq2Q: "¿Tienen licencia y seguro?",
+        faq2A: "Sí, Arrow Moving Van Lines es una empresa de mudanzas con licencia y seguro completos. Contamos con un seguro integral de responsabilidad civil y de carga para proteger sus pertenencias durante todo el proceso de mudanza.",
+        faq3Q: "¿Qué incluye el presupuesto de la mudanza?",
+        faq3A: "Nuestros presupuestos estándar incluyen el camión de mudanzas, los transportistas profesionales, el equipo (carretillas, mantas, correas) y el seguro de responsabilidad civil básico. Los materiales de embalaje y el manejo de artículos especiales están disponibles por un cargo adicional.",
+        faq4Q: "¿Cómo protegen los muebles y los artículos frágiles?",
+        faq4A: "Nuestros transportistas capacitados utilizan mantas de mudanza de alta calidad, envoltura de plástico y técnicas de embalaje especializadas para proteger todos sus muebles. Los artículos frágiles como la cristalería y los electrónicos se embalan cuidadosamente en cajas resistentes.",
         guidesTitle: "Guías de Mudanza Útiles",
         guide1Title: "Guía Definitiva de Empaque",
         guide2Title: "Elegir una Empresa de Mudanzas",
@@ -151,7 +185,9 @@ const translations = {
         formPhone: "Número de teléfono *",
         formDetails: "Detalles adicionales",
         formRequestEstimate: "Solicitar presupuesto gratuito",
-        formSuccessMessage: "¡Gracias! Nos pondremos en contacto con usted en 24 horas con su presupuesto gratuito."
+        formSuccessMessage: "¡Gracias! Nos pondremos en contacto con usted en 24 horas con su presupuesto gratuito.",
+        footerContactTitle: "Contáctenos",
+        footerCopyright: "© 2025 Arrow Moving Van Lines. Todos los derechos reservados."
     },
     hi: {
         navHome: "होम",
@@ -185,6 +221,16 @@ const translations = {
         service4Desc: "न्यूनतम व्यवधान के साथ कुशल और पेशेवर कार्यालय और वाणिज्यिक स्थानांतरण सेवाएं।",
         service5Title: "विशेष आइटम मूविंग",
         service5Desc: "पियानो, कला और प्राचीन वस्तुओं सहित आपके मूल्यवान और नाजुक सामानों के लिए सुरक्षित परिवहन।",
+        detailsBtn: "विवरण देखें",
+        faqTitle: "अक्सर पूछे जाने वाले प्रश्न",
+        faq1Q: "मुझे अपना मूव कितने समय पहले बुक करना चाहिए?",
+        faq1A: "हम कम से कम 4-6 सप्ताह पहले अपना मूव बुक करने की सलाह देते हैं, खासकर पीक सीजन (मई-सितंबर) के दौरान या महीने के अंत में। यह आपकी पसंदीदा तारीख और समय की बेहतर उपलब्धता सुनिश्चित करता है।",
+        faq2Q: "क्या आप लाइसेंस प्राप्त और बीमाकृत हैं?",
+        faq2A: "हाँ, एरो मूविंग वैन लाइन्स एक पूरी तरह से लाइसेंस प्राप्त और बीमाकृत मूविंग कंपनी है। हम आपकी संपत्ति की सुरक्षा के लिए व्यापक देयता और कार्गो बीमा करवाते हैं।",
+        faq3Q: "मूविंग कोट में क्या शामिल है?",
+        faq3A: "हमारे मानक कोट में मूविंग ट्रक, पेशेवर मूवर्स, उपकरण (डॉली, कंबल, पट्टियाँ), और बुनियादी देयता बीमा शामिल हैं। पैकिंग सामग्री, विशेष आइटम हैंडलिंग, और अतिरिक्त बीमा अतिरिक्त शुल्क पर उपलब्ध हैं।",
+        faq4Q: "आप फर्नीचर और नाजुक वस्तुओं की सुरक्षा कैसे करते हैं?",
+        faq4A: "हमारे प्रशिक्षित मूवर्स आपके सभी फर्नीचर की सुरक्षा के लिए उच्च-गुणवत्ता वाले मूविंग कंबल, प्लास्टिक रैप और विशेष पैकिंग तकनीकों का उपयोग करते हैं। कांच के बने पदार्थ और इलेक्ट्रॉनिक्स जैसी नाजुक वस्तुओं को उचित कुशनिंग सामग्री के साथ मजबूत बक्सों में सावधानी से पैक किया जाता है।",
         guidesTitle: "उपयोगी मूविंग गाइड",
         guide1Title: "अंतिम पैकिंग गाइड",
         guide2Title: "एक मूवर कैसे चुनें",
@@ -202,7 +248,9 @@ const translations = {
         formPhone: "फ़ोन नंबर *",
         formDetails: "अतिरिक्त विवरण",
         formRequestEstimate: "मुफ्त अनुमान का अनुरोध करें",
-        formSuccessMessage: "धन्यवाद! हम आपके मुफ्त अनुमान के साथ 24 घंटे के भीतर आपसे संपर्क करेंगे।"
+        formSuccessMessage: "धन्यवाद! हम आपके मुफ्त अनुमान के साथ 24 घंटे के भीतर आपसे संपर्क करेंगे।",
+        footerContactTitle: "संपर्क करें",
+        footerCopyright: "© 2025 एरो मूविंग वैन लाइन्स। सर्वाधिकार सुरक्षित।"
     }
 };
 
@@ -216,7 +264,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('[data-lang-key]').forEach(element => {
             const key = element.getAttribute('data-lang-key');
             if (translations[lang] && translations[lang][key]) {
-                element.textContent = translations[lang][key];
+                // Use textContent for most elements, but value for input buttons
+                if (element.type === 'submit' || element.type === 'button') {
+                     element.value = translations[lang][key];
+                } else {
+                     element.textContent = translations[lang][key];
+                }
             }
         });
     };
@@ -287,6 +340,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
+    // --- SERVICE DETAILS TOGGLE ---
+    document.querySelectorAll('.details-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const details = button.previousElementSibling;
+            details.classList.toggle('open');
+        });
+    });
+
+
     // --- ORIGINAL SCRIPT FUNCTIONALITY ---
 
     // Mobile Menu Toggle
@@ -304,6 +366,7 @@ document.addEventListener('DOMContentLoaded', () => {
             answer.classList.remove('active');
             symbol.textContent = '+';
         } else {
+            // Optional: Close other open FAQs
             document.querySelectorAll('.faq-answer.active').forEach(openAnswer => {
                 openAnswer.classList.remove('active');
                 openAnswer.previousElementSibling.querySelector('span:last-child').textContent = '+';
@@ -318,12 +381,23 @@ document.addEventListener('DOMContentLoaded', () => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+            // Adjust for fixed header height
+            const headerOffset = 70;
+            const element = document.querySelector(targetId);
+            const bodyRect = document.body.getBoundingClientRect().top;
+            const elementRect = element.getBoundingClientRect().top;
+            const elementPosition = elementRect - bodyRect;
+            const offsetPosition = elementPosition - headerOffset;
+
+            window.scrollTo({
+                 top: offsetPosition,
+                 behavior: 'smooth'
+            });
+
+            // Close mobile menu if open
+            const mobileNav = document.getElementById('mobileNav');
+            if(mobileNav.classList.contains('active')){
+                mobileNav.classList.remove('active');
             }
         });
     });
@@ -331,7 +405,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add scroll effect to header
     window.addEventListener('scroll', function() {
         const header = document.querySelector('header');
-        if (window.scrollY > 100) {
+        if (window.scrollY > 50) {
             header.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
         } else {
             header.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
@@ -348,7 +422,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.service-card, .review-card, .guide-card').forEach(card => {
+    document.querySelectorAll('.service-card, .review-card, .guide-card, .faq-item').forEach(card => {
         card.style.opacity = '0';
         observer.observe(card);
     });
